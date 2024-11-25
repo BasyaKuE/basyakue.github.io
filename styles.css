@@ -1,61 +1,66 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    /* フッターの高さを考慮してpaddingを追加 */
-    padding-bottom: 60px;
-    /* フッターの高さに合わせて調整 */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
-header,
-nav,
-footer {
-    background-color: #333;
-    color: white;
+header {
+    background-color: #444;
+    color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em 0;
 }
 
-/* フッターを追加 */
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+nav {
+    position: sticky;
+    top: 0;
     background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    /* フッターの高さを指定 */
-    height: 40px;
-    /* 必要に応じて調整 */
+    padding: 0.5em 0;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-section {
-    margin: 2em 5%;
+main {
+    padding: 2em 5%;
 }
 
-.project-item,
-.research-item {
+section {
     margin-bottom: 2em;
+}
+
+.project-item, .research-item {
+    margin-bottom: 1.5em;
+    border-left: 4px solid #444;
+    padding-left: 1em;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
