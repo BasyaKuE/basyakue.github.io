@@ -1,128 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eiki Soetaのプロフィールサイト。研究内容やプロジェクト、資格、連絡先情報を掲載しています。">
-    <title>Eiki Soeta</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="icon" href="icon.png" type="image/png">
-</head>
-<body>
-    <header>
-        <h1>eiki</h1>
-    </header>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#about">自己紹介</a></li>
-            <li><a href="#research">研究</a></li>
-            <li><a href="#projects">やってきたこと</a></li>
-            <li><a href="#contact">連絡先</a></li>
-            <!-- <li><a href="./blog/top.html">ブログ</a></li> -->
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>自己紹介</h2>
-            <div class="about-item">
-                <img src="icon.png" alt="Eiki Soetaのアイコン" width="20%" height="20%" style="float: right; margin-top: 10px; margin-right: 10px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">
-                <h3>Eiki Soeta 添田英紀</h3>
-                <ul>
-                    <li>1月22日福島県生まれ</li>
-                    <li>東京都立大学 システムデザイン研究科 情報科学域 横山研究室 M2</li>
-                </ul>
-            </div>
-            <div class="about-item">
-                <h3>趣味</h3>
-                <ul>
-                    <li>海外サッカー観戦（主にプレミアリーグ）</li>
-                    <li>映画鑑賞</li>
-                    <li>ゲーム</li>
-                    <li>テニス</li>
-                    <li><a href="https://kyurushite.com" target="_blank" rel="noopener noreferrer">きゅるりんってしてみて</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="research">
-            <h2>研究</h2>
-            関心事はソーシャルメディアでの人々の振る舞い
-            <div class="research-item">
-                <h3>国内会議(査読なし)</h3>
-                <ul>
-                    <li>添田英紀, 横山昌平. ニュース記事の拡散速度に着目したソーシャルメディア分析, DEIM2024, 2024/03. [<a href="https://confit.atlas.jp/guide/event-img/deim2024/T3-A-7-04/public/pdf?type=in" target="_blank" rel="noopener noreferrer">pdf</a>]</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>やってきたこと</h2>
-
-            <h3>個人開発</h3>
-            <div class="project-item">
-                <h4>都立大生向け情報共有サイト石池</h4>
-                <p>2020年公開. Python, Django, PostgreSQL, AWS EC2. 技育展2022出展. 2023年3月, 私の学部卒業に伴いherokuに移行し, 管理者を後輩に譲渡 [<a href="https://ishiike.herokuapp.com" target="_blank" rel="noopener noreferrer">リンク</a>]</p>
-            </div>
-
-            <h3>アルバイト・インターン</h3>
-            <div class="project-item">
-                <h4>松屋 アルバイト</h4>
-                <p>2020年11月から2022年7月まで</p>
-            </div>
-            <div class="project-item">
-                <h4>株式会社AppBrew アルバイト</h4>
-                <p>2022年6月から2024年7月まで. 使用言語は主にPython</p>
-            </div>
-            <div class="project-item">
-                <h4>株式会社dely 3daysインターン</h4>
-                <p>2024年8月, 主にRuby(Ruby on Rails)でのバックエンド開発</p>
-            </div>
-            <div class="project-item">
-                <h4>共同通信 長期インターン</h4>
-                <p>2024年9月に14日間, Python(Flask)を用いてバックエンド開発. その際の記事が<a href="https://note.com/kyodonews_jinji/n/n3ee9f9e1f4ec" target="_blank" rel="noopener noreferrer">こちら</a></p>
-            </div>
-
-            <h3>資格等</h3>
-            <div class="project-item">
-                <h4>TOEIC 835点</h4>
-                <p>2023年4月</p>
-            </div>
-            <div class="project-item">
-                <h4>AtCoder Highest 緑</h4>
-                <p>使用言語はPython. [<a href="https://atcoder.jp/users/basyakue" target="_blank" rel="noopener noreferrer">リンク</a>]</p>
-            </div>
-        </section>
-
-
-        <section id="contact">
-            <h2>連絡先</h2>
-            <p>メールアドレス: basyakue[at]gmail.com</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Eiki Soetaのプロフィールサイト. 研究内容やプロジェクト、資格、連絡先情報を掲載しています. "
+        />
+        <title>Eiki Soeta</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="icon.png" type="image/png" />
+    </head>
+    <body>
+        <header>
+            <h1>eiki</h1>
+        </header>
+        <nav id="navbar">
             <ul>
-                <li><a href="https://github.com/BasyaKuE" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://mixi.social/@basyakue" target="_blank" rel="noopener noreferrer">mixi2</a></li>
-                <li><a href="https://twitter.com/BasyaKuE" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="https://bsky.app/profile/basyakue.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
-                <li><a href="https://www.linkedin.com/in/%E8%8B%B1%E7%B4%80-%E6%B7%BB%E7%94%B0-3729572b5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://basyakue.hatenablog.com/" target="_blank" rel="noopener noreferrer">はてなブログ</a></li>
-                <li><a href="https://tmu.yokoyama.ac/" target="_blank" rel="noopener noreferrer">都立大 横山研究室</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#research">研究</a></li>
+                <li><a href="#projects">やってきたこと</a></li>
+                <li><a href="#contact">連絡先</a></li>
+                <!-- <li><a href="./blog/top.html">ブログ</a></li> -->
             </ul>
-        </section>
+        </nav>
+        <main>
+            <section id="about">
+                <h2>自己紹介</h2>
+                <div class="about-item">
+                    <img
+                        src="icon.png"
+                        alt="Eiki Soetaのアイコン"
+                        width="20%"
+                        height="20%"
+                        style="
+                            float: right;
+                            margin-top: 10px;
+                            margin-right: 10px;
+                            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                        "
+                    />
+                    <h3>Eiki Soeta 添田英紀</h3>
+                    <ul>
+                        <li>1月22日福島県生まれ</li>
+                        <li>
+                            東京都立大学 システムデザイン研究科 情報科学域
+                            修士卒
+                        </li>
+                        <li>都内在住ソフトウェアエンジニア</li>
+                    </ul>
+                </div>
+                <div class="about-item">
+                    <h3>趣味</h3>
+                    <ul>
+                        <li>麻雀. 好きな役は混一色</li>
+                        <li>映画鑑賞. 好きな監督はデヴィッド・フィンチャー</li>
+                        <li>ゲーム. 小島秀夫ゲームが好き</li>
+                        <li>テニス. 中高テニス部でした</li>
+                        <li>海外サッカー観戦. 主にプレミアリーグ. 三笘新規</li>
+                        <li>
+                            アイドル. 推しがいるのは
+                            <a
+                                href="https://kyurushite.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >きゅるりんってしてみて</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="recommend">
-            <h2>おすすめ</h2>
-            <ul>
-                <li><a href="https://www.paulgraham.com" target="_blank" rel="noopener noreferrer">Paul Graham</a></li>
-                <li><a href="https://rebuild.fm" target="_blank" rel="noopener noreferrer">Rebuild.fm</a></li>
-                <li><a href="https://genron.co.jp" target="_blank" rel="noopener noreferrer">ゲンロン</a></li>
-                <li><a href="https://kyurushite.com" target="_blank" rel="noopener noreferrer">きゅるりんってしてみて</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Eiki Soeta</p>
-    </footer>
-</body>
+            <section id="research">
+                <h2>研究</h2>
+                関心事はソーシャルメディアでの人々の振る舞い
+                <div class="research-item">
+                    <h3>国際会議（査読あり）</h3>
+                    <ul>
+                        <li>
+                            Eiki Soeta, Shohei Yokoyama. "EmojiMap: Toward
+                            Multi-Feature Geographic Visualization with Social
+                            Media Data", Communications in Computer and
+                            Information Science (CCIS), Springer
+                            <strong
+                                >(Selected and extended from MEDES'25) </strong
+                            >.
+                        </li>
+                        <li>
+                            Eiki Soeta, Shohei Yokoyama. "EmojiMap: Toward
+                            Multi-Feature Geographic Visualization with Social
+                            Media Data", The 17th International Conference on
+                            Management of Digital EcoSystems (MEDES’25), Ho Chi
+                            Minh, Viet Nam, 2025.11.25.
+                        </li>
+                    </ul>
+                    <h3>国内会議（査読なし）</h3>
+                    <ul>
+                        <li>
+                            添田英紀, 横山昌平.
+                            "ニュース記事の拡散速度に着目したソーシャルメディア分析",
+                            DEIM2024, 2024/03. [<a
+                                href="https://confit.atlas.jp/guide/event-img/deim2024/T3-A-7-04/public/pdf?type=in"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >pdf</a
+                            >]
+                        </li>
+                        <li>
+                            添田 英紀, 横山 昌平,
+                            “ジオタグ付き画像による地理的特徴の可視化”,
+                            2025年電子情報通信学会総合大会,
+                            東京都市大学世田谷キャンパス, 2025.03.27 [<a
+                                href="https://www.ieice.org/publications/conferences/summary.php?id=CONF0000150031&expandable=0&ConfCd=2025G&session_num=D-4&lecture_number=D-4-01&year=2025&conf_type=G"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >リンク</a
+                            >]
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>やってきたこと</h2>
+                <h3>職歴</h3>
+                <div class="project-item">
+                    <h4>クラシル株式会社</h4>
+                    <p>
+                        <time datetime="2026-04">2026年4月</time> - 現在.
+                        サーバーサイドエンジニアとして勤務. Ruby on Rails,
+                        Next.js, AWS
+                    </p>
+                </div>
+
+                <h3>個人開発</h3>
+                <div class="project-item">
+                    <h4>都立大生向け情報共有サイト石池</h4>
+                    <p>
+                        2020年公開. Python, Django, PostgreSQL, AWS EC2.
+                        技育展2022出展. 2023年3月,
+                        私の学部卒業に伴いherokuに移行し, 管理者を後輩に譲渡 [<a
+                            href="https://ishiike.herokuapp.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >リンク</a
+                        >]
+                    </p>
+                </div>
+
+                <h3>アルバイト・インターン</h3>
+                <div class="project-item">
+                    <h4>株式会社AppBrew アルバイト</h4>
+                    <p>2022年6月から2024年7月まで. 使用言語は主にPython</p>
+                </div>
+                <div class="project-item">
+                    <h4>株式会社dely（現 クラシル株式会社） 3daysインターン</h4>
+                    <p>
+                        2024年8月, 主にRuby(Ruby on Rails)でのバックエンド開発
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h4>共同通信 長期インターン</h4>
+                    <p>
+                        2024年9月に14日間,
+                        Python(Flask)を用いてバックエンド開発. その際の記事が<a
+                            href="https://note.com/kyodonews_jinji/n/n3ee9f9e1f4ec"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >こちら</a
+                        >
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h4>クラシル株式会社 内定者インターン</h4>
+                    <p>
+                        2025年4月から2026年3月まで, Ruby(Ruby on
+                        Rails)とTypeScript(Next.js)を主に使ったフルスタック開発
+                    </p>
+                </div>
+
+                <h3>資格等</h3>
+                <div class="project-item">
+                    <h4>TOEIC 835点</h4>
+                    <p>2023年4月</p>
+                </div>
+                <div class="project-item">
+                    <h4>AtCoder Highest 緑</h4>
+                    <p>
+                        使用言語はPython. [<a
+                            href="https://atcoder.jp/users/basyakue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >リンク</a
+                        >]
+                    </p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>連絡先</h2>
+                <p>メールアドレス: basyakue[at]gmail.com</p>
+                <ul>
+                    <li>
+                        <a
+                            href="https://github.com/BasyaKuE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >GitHub</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://mixi.social/@basyakue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >mixi2</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://twitter.com/BasyaKuE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Twitter</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://bsky.app/profile/basyakue.bsky.social"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Bluesky</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/%E8%8B%B1%E7%B4%80-%E6%B7%BB%E7%94%B0-3729572b5/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://basyakue.hatenablog.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >はてなブログ</a
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section id="recommend">
+                <h2>おすすめ</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.paulgraham.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Paul Graham</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://rebuild.fm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Rebuild.fm</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://genron.co.jp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >ゲンロン</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://kyurushite.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >きゅるりんってしてみて</a
+                        >
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Eiki Soeta</p>
+        </footer>
+    </body>
 </html>
