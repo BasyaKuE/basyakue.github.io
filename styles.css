@@ -1,16 +1,51 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #444444;
+    --header-text: #ffffff;
+    --nav-bg: #333333;
+    --card-bg: #f9f9f9;
+    --card-border: #444444;
+    --link-color: #0066cc;
+    --link-hover: #004499;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #e0e0e0;
+        --header-bg: #1e1e1e;
+        --header-text: #ffffff;
+        --nav-bg: #1f1f1f;
+        --card-bg: #1e1e1e;
+        --card-border: #666666;
+        --link-color: #64b5f6;
+        --link-hover: #90caf9;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Sawarabi Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
 header {
-    background-color: #444;
-    color: #fff;
+    background-color: var(--header-bg);
+    color: var(--header-text);
     text-align: center;
     padding: 0.5em 0;
 }
@@ -18,7 +53,7 @@ header {
 nav {
     position: sticky;
     top: 0;
-    background-color: #333;
+    background-color: var(--nav-bg);
     padding: 0.5em 0;
     z-index: 1000;
 }
@@ -43,7 +78,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 2em 5%;
+    padding: 2em 5% 4em 5%;
 }
 
 section {
@@ -52,17 +87,16 @@ section {
 
 .about-item, .project-item, .research-item {
     margin-bottom: 1.5em;
-    border-left: 4px solid #444;
-    padding-left: 1em;
-    background-color: #f9f9f9;
+    border-left: 4px solid var(--card-border);
+    padding: 0.8em 1em;
+    background-color: var(--card-bg);
     border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--nav-bg);
     color: white;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 0.5em 0;
 }
+
